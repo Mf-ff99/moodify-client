@@ -23,7 +23,6 @@ const MoodApiService = {
     getMoods() {
         return fetch(`${config.API_ENDPOINT}/moods`, {
             headers: {
-                
             },
         })
         .then(res =>

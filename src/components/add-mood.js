@@ -15,7 +15,8 @@ export default class AddMood extends React.Component {
 
     onLoginSuccess = () => {
         this.props.history.push('/home')
-      }    
+      }
+    //on add success refresh state    
 
     render() {
         return (
