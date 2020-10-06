@@ -23,6 +23,7 @@ const MoodApiService = {
     getMoods() {
         return fetch(`${config.API_ENDPOINT}/moods`, {
             headers: {
+                'authorization': `bearer ${TokenService.getAuthToken()}`,
             },
         })
         .then(res =>

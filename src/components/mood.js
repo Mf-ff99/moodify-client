@@ -1,4 +1,5 @@
 import React from 'react'
+import { NiceDate } from '../components/Utils/Utils'
 
 //display the fetched mood with props, reusable function
 
@@ -19,10 +20,10 @@ export default class Mood extends React.Component {
                 {!this.state.expanded ? 
                <li className="mood-item" onClick={this.handleExpand}>
                 <h2>{this.props.props.current_mood}/10</h2>
-                <h3>{this.props.props.date_added}</h3>
+                <h3>{ new Date(this.props.props.date_added).toString().split(" ").slice(0, 4).join(" ")}</h3>
             </li> : <li className="mood" onClick={this.handleExpand}>
             <h2>{this.props.props.current_mood}/10</h2>
-            <h3>{this.props.props.date_added}</h3>
+            <h3>{}</h3>
             <br />
             <h3>{this.props.props.date_added}</h3>
             <h3>Notes:</h3>

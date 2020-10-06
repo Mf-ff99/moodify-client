@@ -1,11 +1,12 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch } from 'react-router-dom'
 import Home from '../components/home'
 import LandingPage from '../components/landing-page'
 import AddMood from '../components/add-mood'
 import LoginForm from '../components/login-form'
 import PrivateRoute from '../components/Utils/PrivateRoute'
 import PublicOnlyRoute from '../components/Utils/PublicOnlyRoute'
+import RegistrationForm from '../components/registration-form'
 
 const Main = () => (
     <>
@@ -16,8 +17,7 @@ const Main = () => (
             <PrivateRoute path="/home" component={Home} />
             <PrivateRoute path="/add-mood" component={AddMood} />
             <PublicOnlyRoute path="/login" component={LoginForm} />
-
-            {/* <Route path="/?" component={???} */}
+            <PublicOnlyRoute path="/register" component={RegistrationForm} />
         </Switch>
     </>
 )

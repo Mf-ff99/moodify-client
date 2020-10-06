@@ -12,8 +12,8 @@ export default class Chart extends React.Component {
         datasets: [
             {
                 label: 'your mood',
-                fill: false,
-                lineTension: 0.5,
+                fill: true,
+                lineTension: 0.7,
                 backgroundColor: 'rgba(75,192,192,1)',
                 borderColor: 'rgba(0,0,0,1)',
                 borderWidth: 2,
@@ -22,9 +22,6 @@ export default class Chart extends React.Component {
         ],
         moods: []
     }
-    //add second chart of past week
-    //no limit on moods: show all
-    //limit on second chart: show past week
 
     componentDidMount() {
         MoodApiService.getMoods()
@@ -108,7 +105,8 @@ export default class Chart extends React.Component {
                     new Date(mood.date_added).toString().split(" ").slice(0, 4).join(" ")
                 )
                 this.setState({ labels: allTimeDateAxis, datasets: [{ label: 'your mood', data: allTimeMoods }] })
-            default:
+                    break;
+                default:
                 return;
         }
     }
@@ -129,7 +127,7 @@ export default class Chart extends React.Component {
                     options={{
                         title: {
                             display: true,
-                            text: 'All time moods',
+                            text: 'Your mood history',
                             fontSize: 20
                         },
                         legend: {
