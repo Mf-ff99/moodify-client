@@ -12,7 +12,30 @@ nav {
   font-size: 1em;
 }
 
+li {
+  list-style: none;
+  border: .2em solid cadetblue;
+  border-radius: 2em;
+  padding: .5em;
+  margin-bottom: .5em;
+}
+
 body {
   margin: 1.5em;
   font-size: 1em;
+}
+
+.page-content {
+  
+}
+
+button {
+  border-radius: .5em;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+
+button:hover {
+  border-color: whitesmoke;
 }

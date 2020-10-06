@@ -2,7 +2,7 @@ import config from '../config'
 import TokenService from './TokenService'
 
 const MoodApiService = {
-    postMood(note, mood) {
+    postMood(note, mood, category) {
         return fetch(`${config.API_ENDPOINT}/moods`, {
             method: 'POST',
             headers: {
@@ -12,6 +12,7 @@ const MoodApiService = {
             body: JSON.stringify({
                 note: note,
                 current_mood: mood,
+                category_id: category,
             }),
         })
         .then(res =>

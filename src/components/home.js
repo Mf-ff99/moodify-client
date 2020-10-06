@@ -1,9 +1,8 @@
 import React from 'react'
-import { Route, Link, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import MoodApiService from '../services/MoodApiService'
 import Mood from './mood'
 import Chart from './chart'
-
 
 export default class Home extends React.Component {
   state = {
@@ -45,7 +44,6 @@ export default class Home extends React.Component {
             return;
           };
         });
-        console.log(filteredMoods, ' filtered moods')
         this.setState({
           moods: filteredMoods,
         })
@@ -66,9 +64,6 @@ export default class Home extends React.Component {
     }
   }
 
-  //populate chart - DONE
-  //populate page with moods - DONE
-  //allow for sorting values
 
   render() {
     let allMoods = this.state.moods

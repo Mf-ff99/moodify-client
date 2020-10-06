@@ -10,10 +10,10 @@ export default class AddMood extends React.Component {
 
     handleSubmitMood = e => {
         e.preventDefault()
-        const { mood, moodNote } = e.target
+        const { mood, moodNote, category } = e.target
     
-
-        MoodApiService.postMood(moodNote.value, Number(mood.value))
+        
+        MoodApiService.postMood(moodNote.value, Number(mood.value), category.value)
             .then(this.onLoginSuccess())
     }
 
@@ -45,6 +45,15 @@ export default class AddMood extends React.Component {
                         <option>8</option>
                         <option>9</option>
                         <option>10</option>
+                    </select>
+                    <br />
+                    <label htmlFor="category">What category would you like to put your mood in?</label>
+                    <select name="category" required>
+                        <option value={1}>Work</option>
+                        <option value={5}>Play</option>
+                        <option value={3}>Substances</option>
+                        <option value={2}>Study</option>
+                        <option value={4}>Day off</option>
                     </select>
                     <br />
                     <label htmlFor="sleep-time">How many hours did you sleep last night?</label>

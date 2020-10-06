@@ -1,9 +1,8 @@
 import React from 'react'
-import { NiceDate } from '../components/Utils/Utils'
-
 //display the fetched mood with props, reusable function
 
 export default class Mood extends React.Component {
+
     state = {
         expanded: false,
     }
@@ -14,7 +13,31 @@ export default class Mood extends React.Component {
             expanded: newState
         })
     }
+
+    handleCategory = (catId) => {
+        switch(catId){
+            case 1:
+                return 'Work'
+                
+            case 2:
+                return 'Study'
+                
+            case 3:
+                return 'Substances'
+                
+            case 4:
+                return 'Day off'
+                
+            case 5:
+                return 'Play'
+              
+            default:
+                return;
+        }
+    }
+
     render() {
+
         return (
             <>
                 {!this.state.expanded ? 
@@ -29,6 +52,7 @@ export default class Mood extends React.Component {
             <h3>Notes:</h3>
             <p>{this.props.props.note}</p>
             <p>Hours slept: 7</p>
+            <p>Category: {this.handleCategory(this.props.props.category_id)}</p>
           </li>}
           </>
         )

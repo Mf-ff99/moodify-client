@@ -20,9 +20,7 @@ export default class LoginForm extends React.Component {
     ev.preventDefault()
     this.setState({ error: null })
     const { username, password } = ev.target
-
-    console.log(username.value, password.value)
- 
+     
     AuthApiService.postLogin({
       user_name: username.value,
       password: password.value,
@@ -40,6 +38,8 @@ export default class LoginForm extends React.Component {
 
 
   render() {
+    const { error } = this.state
+
     return (
       <section className="login-form">
         <h1>Log in</h1>
@@ -47,7 +47,9 @@ export default class LoginForm extends React.Component {
         <form className="LoginForm"
          onSubmit={this.handleSubmitJwtAuth}
         >
-
+          <div role='alert'>
+          {error && <p className='red'>{error}</p>}
+        </div>
           <div className="container">
             <label htmlFor="username"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="username" defaultValue="dunder" required />

@@ -62,7 +62,6 @@ export default class Chart extends React.Component {
                 //state to an array filtered by past week
                 filteredMoods = sortedMoods.filter((d) => {
                     return new Date(d.date_added).getTime() > seventhDay.getTime()
-
                 }).sort(function (x, y) {
                     return new Date(x.date_added) - new Date(y.date_added);
                 });
@@ -74,7 +73,6 @@ export default class Chart extends React.Component {
                     new Date(mood.date_added).toString().split(" ").slice(0, 4).join(" ")
                 )
                 this.setState({ labels: newDateAxis, datasets: [{ label: 'your mood', data: filtered }] })
-
                 break;
             case 'pastMonth':
                 const monthFilteredMoods = sortedMoods.filter((d) => {
@@ -83,7 +81,7 @@ export default class Chart extends React.Component {
                 }).sort(function (x, y) {
                     return new Date(x.date_added) - new Date(y.date_added);
                 });
-            
+
                 const monthFiltered = monthFilteredMoods.map(mood =>
                     mood.current_mood
                 )
@@ -105,8 +103,8 @@ export default class Chart extends React.Component {
                     new Date(mood.date_added).toString().split(" ").slice(0, 4).join(" ")
                 )
                 this.setState({ labels: allTimeDateAxis, datasets: [{ label: 'your mood', data: allTimeMoods }] })
-                    break;
-                default:
+                break;
+            default:
                 return;
         }
     }
