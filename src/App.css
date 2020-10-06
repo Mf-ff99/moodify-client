@@ -1,6 +1,18 @@
-.nav {
+nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-right: 1.5em;
   margin-left: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: cadetblue;
+  border-radius: 1em;
+  color: purple;
+  font-size: 1em;
+}
+
+body {
+  margin: 1.5em;
+  font-size: 1em;
 }
