@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import MoodApiService from '../services/MoodApiService'
 import Mood from './mood'
-import Chart from './chart'
+import Chart from './Chart'
 
 export default class Home extends React.Component {
   state = {

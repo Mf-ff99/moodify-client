@@ -1,12 +1,12 @@
 import React from 'react'
 import { Switch } from 'react-router-dom'
-import Home from '../components/home'
-import LandingPage from '../components/landing-page'
-import AddMood from '../components/add-mood'
-import LoginForm from '../components/login-form'
+import Home from '../components/Home'
+import LandingPage from '../components/LandingPage'
+import AddMood from '../components/AddMood'
+import LoginForm from '../components/LoginForm'
 import PrivateRoute from '../components/Utils/PrivateRoute'
 import PublicOnlyRoute from '../components/Utils/PublicOnlyRoute'
-import RegistrationForm from '../components/registration-form'
+import RegistrationForm from '../components/RegistrationForm'
 
 const Main = () => (
     <>

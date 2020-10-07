@@ -2,7 +2,6 @@ import React from 'react';
 import MoodApiService from '../services/MoodApiService'
 import { Line } from 'react-chartjs-2';
 
-
 export default class Chart extends React.Component {
 
     state = {

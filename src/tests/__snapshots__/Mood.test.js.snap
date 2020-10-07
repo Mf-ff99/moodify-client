@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mood Component renders props approriately 1`] = `
+<Fragment>
+  <li
+    className="mood-item"
+    onClick={[Function]}
+  >
+    <h2>
+      /10
+    </h2>
+    <h3>
+      Invalid Date
+    </h3>
+  </li>
+</Fragment>
+`;
