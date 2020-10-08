@@ -15,18 +15,30 @@ nav {
   font-size: 1em;
 }
 
+ul {
+  margin-top: 1em;
+  max-height: 600px;
+  overflow: scroll;
+}
+
 li {
   list-style: none;
   border: .2em solid cadetblue;
   border-radius: 2em;
   padding: .5em;
   margin-bottom: .5em;
+  max-width: 250px;
 }
 
 body {
   margin: 1.5em;
   font-size: 1em;
 }
+
+#chart-js {
+  height: 400px;
+  width: 600px;
+} 
 
 .page-content {
   
@@ -41,6 +53,10 @@ button {
 
 button:hover {
   border-color: whitesmoke;
+}
+
+.home-page #mood-list .add-mood-btn {
+  margin: .5em;
 }
 
 }
@@ -69,18 +85,63 @@ button:hover {
     padding: .5em;
     margin-bottom: .5em;
   }
-  
+
   body {
-    margin: 1.5em;
-    font-size: 1em;
-  }
-  
-  #mood-list { 
-    height: 300px;
     display: flex;
-    /* flex-dire       */
+    justify-content: center;
+  }
+
+  .page-content {
+    margin-top: .5em;
+    padding-top: .5em;
+    display: flex;
+    width: 1300px;
+    align-items: center;
+    justify-content: center;
   }
   
+  .home-page {
+    width: 80%;
+    min-height: 416px;
+    display: flex;
+  }
+  
+  
+  .home-page #mood-display {
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    margin-right: 10px;
+    flex: 1;
+    border: 3px solid black;
+    min-width: 550px;
+    max-width: 550px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+  }
+
+
+  #chart-js {
+    height: 400px;
+    width: 600px;
+  } 
+  
+  .home-page #mood-list { 
+    margin-right: 2em;
+    height: 550px;
+    overflow: scroll;
+    width: 70%;
+    flex-direction: column;
+    border: 3px solid black;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    font-size: 14px;
+    width: 400px; 
+    }
+
+  .home-page #mood-list .add-mood-btn {
+    margin: .5em;
+    margin-left: 35%;
+  }
+
   button {
     border-radius: .5em;
     background-color: cornflowerblue;
@@ -93,3 +154,5 @@ button:hover {
   }
   
   }
+
+

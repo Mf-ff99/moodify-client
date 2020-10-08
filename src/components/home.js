@@ -74,10 +74,10 @@ export default class Home extends React.Component {
     return (
       <>
         <section className="home-page">
-          <div className="mood-display">
+          <div className="mood-display" id="mood-display">
             <h1>How have you been feeling recently?</h1>
             <div className="add-mood-filter-btn-container">
-              <Link to="/add-mood"><button type="click" className="add-mood-btn">Add a mood</button></Link>
+              
               {/* <select name="filter" onChange={this.handleFiltering}>
                 <option value="pastWeek">Past week</option>
                 <option value="pastMonth">Past month</option>
@@ -88,10 +88,9 @@ export default class Home extends React.Component {
             <Chart props={this.state.moods} />
           </div>
           <div className="past-moods">
-            <h1>Your past moods:</h1>
-            <br />
             <ul id="mood-list" className="past-moods-list">
               <hr />
+              <Link to="/add-mood"><button type="click" className="add-mood-btn">Add a mood</button></Link>
               {sortedMoods.map(mood => {
                 return <Mood key={mood.id} props={mood} />
               })}

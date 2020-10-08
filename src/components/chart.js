@@ -112,7 +112,7 @@ export default class Chart extends React.Component {
     render() {
 
         return (
-            <div>
+            <div id="chart-js">
                 <select name="filter" onChange={this.handleFiltering}>
                     <option value="pastWeek">Past week</option>
                     <option value="pastMonth">Past month</option>
@@ -122,10 +122,12 @@ export default class Chart extends React.Component {
                 <Line
                     data={this.state}
                     options={{
+                        responsive: true,
+                        maintainAspectRatio: false,
                         title: {
                             display: true,
                             text: 'Your mood history',
-                            fontSize: 20
+                            fontSize: 20,
                         },
                         legend: {
                             fontSize: 20,
