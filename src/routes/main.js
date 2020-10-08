@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch } from 'react-router-dom'
-import Home from '../components/Home'
+import Home from '../components/home'
 import LandingPage from '../components/LandingPage'
 import AddMood from '../components/AddMood'
 import LoginForm from '../components/LoginForm'
