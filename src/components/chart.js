@@ -131,7 +131,7 @@ export default class Chart extends React.Component {
                         },
                         legend: {
                             fontSize: 20,
-                            position: 'right',
+                            position: 'top',
                             display: true,
                         }
                     }}
