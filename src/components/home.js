@@ -41,7 +41,7 @@ export default class Home extends React.Component {
           if(new Date(d.date_added).getTime() >= seventhDay.getTime()) {
             return d;
           } else {
-            return;
+            return null;
           };
         });
         this.setState({

@@ -46,6 +46,4 @@ describe('Mood Component', () => {
         const wrapper = shallow(<Mood props={moodProps} />)
         expect(toJson(wrapper)).toMatchSnapshot()
       })
-
-
 })
