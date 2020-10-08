@@ -77,7 +77,8 @@ button:hover {
   
   #mood-list { 
     height: 300px;
-          
+    display: flex;
+    /* flex-dire       */
   }
   
   button {

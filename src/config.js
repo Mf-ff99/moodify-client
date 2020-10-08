@@ -1,4 +1,4 @@
 export default {
     API_ENDPOINT: 'https://moodify-server-api.herokuapp.com/api',
-    TOKEN_KEY: 'password',
+    TOKEN_KEY: 'moodify-auth-token',
   }
