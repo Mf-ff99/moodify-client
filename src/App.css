@@ -27,14 +27,15 @@ nav {
     font-size: 1.5em;
   }
   
-  .header ul {
+.header ul {
     list-style: none;
   }
-    .past-moods ul {
+.past-moods ul {
   margin-top: 1em;
   max-height: 600px;
   overflow: scroll;
 }
+
 
 .past-moods li {
   list-style: none;
@@ -48,7 +49,7 @@ nav {
 body {
   margin: 1.5em;
   font-size: .5em;
-  margin-top: 8em;
+  margin-top: 10em;
   display: flex;
   justify-content: center;
 }
@@ -89,6 +90,13 @@ button:hover {
 .home-page #mood-list .add-mood-btn {
   margin: .5em;
 
+}
+
+.add-mood-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .add-mood button {
@@ -147,13 +155,13 @@ button:hover {
 
   /* ul, li of Mood list */
 
-  .past-moods ul {
+.past-moods ul {
     margin-top: 1em;
-    max-height: 600px;
+    max-height: 460px;
     overflow: hidden;
   }
   
-  .past-moods li {
+.past-moods li {
     list-style: none;
     /* border: .2em solid cadetblue; */
     border-radius: 2em;
@@ -161,17 +169,28 @@ button:hover {
     margin-left: .7em;
     margin-bottom: .5em;
     background-color: #D1DEDE;
-    box-shadow: 3px 2px 2px 1px #ccc;
   }
 
-  body {
+.past-moods {
+  margin-top: 5px;
+  background-color: white;
+  padding-top: 5px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
     display: flex;
     justify-content: center;
     margin-top: 5em;
+    margin-left: 9.5em;
     background-color: #D1DEDE;
   }
 
-  .page-content {
+.page-content {
     margin-top: .5em;
     padding-top: .5em;
     display: flex;
@@ -182,7 +201,7 @@ button:hover {
 
   /* HOME PAGE */
   
-  .home-page {
+.home-page {
     width: 80%;
     min-height: 416px;
     display: flex;
@@ -193,7 +212,7 @@ button:hover {
   /* MOOD CHART */
   
   
-  .home-page #mood-display {
+.home-page #mood-display {
     padding: 10px;
     padding-bottom: 20px;
     /* padding-right: 10px; */
@@ -208,10 +227,6 @@ button:hover {
     height: 490px;
   }
 
-  .home-page #mood-display:hover {
-  
-
-  }
 
 .add-mood-form{
     display: flex;
@@ -220,28 +235,30 @@ button:hover {
     /* align-items: center; */
   }
 
-  #cancel-mood-btn {
+#cancel-mood-btn {
     margin-left: 43%;
   }
+  
+.chart-container{
+    padding-right: 10px;
+  }
 
-
-  #chart-js {
+#chart-js {
     height: 400px;
     width: 50vw;
     max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: .5em;
   }
   
-  #chart-js #chart-filter {
+#chart-js #chart-filter {
       flex-grow: 0;
   }
   
   /* MOOD LIST */
-  .home-page #mood-list { 
-    padding-right: 1.5em;
+.home-page #mood-list { 
+    /* padding-right: 1.5em; */
     height: 520px;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -255,7 +272,7 @@ button:hover {
     }
   
     /* SPLASH PAGE */
-  .splash-page {
+.splash-page {
     display: flex;
     justify-content: center;
     box-shadow: 3px 3px 5px 6px #ccc;
@@ -265,40 +282,42 @@ button:hover {
     background-color: white;
   }
 
-  .splash-page header {
+.splash-page header {
     padding-right: 5px;
     display: flex;
     align-items: center;
   }
 
-  .splash-page-to {
+.splash-page-to {
     margin-left: 35%;
   }
 
-  .splash-page-btn{
+.splash-page-btn{
     /* margin-left: 25%; */
     margin-top: 5px;
   }
 
-  .home-page #mood-list .add-mood-btn {
+.home-page #mood-list .add-mood-btn {
     margin: .5em;
     margin-left: 33%;
     padding: 2px;
   }
 
-  .login-form {
+.login-form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
+
+
 #login-btn {
   margin-top: .5em;
    margin-left: 36%;
   }
 
-  .add-mood {
+.add-mood {
     border: 3px solid cadetblue;
     border-radius: 20px;
     padding: 5px;
@@ -309,25 +328,25 @@ button:hover {
     background-color: white;
   }
 
-  .add-mood button {
+.add-mood button {
     margin-bottom: 2px;
     padding: 1px;
     background-color: #5B4E77;
   }
   
-  #cancel-mood-btn {
+#cancel-mood-btn {
     padding: 5px;
   }
 
-  .expand-mood-btn {
+.expand-mood-btn {
     background-color: #2E5EAA;
   }
 
-  .add-mood-btn {
+.add-mood-btn {
     background-color: #5B4E77;
   }
 
-  button {
+button {
     border-radius: .5em;
     background-color: cornflowerblue;
     color: whitesmoke;
@@ -335,11 +354,11 @@ button:hover {
     padding: 5px;
   }
 
-  .btn {
+.btn {
     padding: 5px;
   }
   
-  button:hover {
+button:hover {
     border-color: whitesmoke;
   }
 
@@ -347,7 +366,7 @@ button:hover {
 
 
 
- header ul li {
+header ul li {
    float: left;
    list-style: none;
    margin-right: 1em;
@@ -356,7 +375,7 @@ button:hover {
    padding: 12px; 
   }
    
-  header li {
+header li {
     color: #544738;
  text-decoration: none;
  float: left;

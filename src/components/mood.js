@@ -43,7 +43,7 @@ export default class Mood extends React.Component {
             day: 'numeric',
             hour: 'numeric',
             minute: 'numeric',
-            second: 'numeric'
+           
         }
         const date = new Date(this.props.props.date_added)
         return (

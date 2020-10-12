@@ -5,49 +5,53 @@ import TokenService from '../services/TokenService'
 
 export default class Nav extends React.Component {
 
-    handleLogoutClick = () => {
-        TokenService.clearAuthToken();
-      }
 
-      renderLogoutLink() {
-        return (
-          <li className="left">
-            <Link
-              onClick={this.handleLogoutClick}
-              to='/'>
-              Logout
+
+
+
+  handleLogoutClick = () => {
+    TokenService.clearAuthToken();
+  }
+
+  renderLogoutLink() {
+    return (
+      <li className="left">
+        <Link
+          onClick={this.handleLogoutClick}
+          to='/'>
+          Logout
             </Link>
-          </li>
-        )
-      }
+      </li>
+    )
+  }
 
-      renderLoginLink() {
-        return (
-          <li className="left">
-            <Link
-              to='/login'>
-              Log in
+  renderLoginLink() {
+    return (
+      <li className="left">
+        <Link
+          to='/login'>
+          Log in
             </Link>
-         </li>        
-        )
-      }
+      </li>
+    )
+  }
 
-      renderRegisterLink() {
-        return (
+  renderRegisterLink() {
+    return (
+      <li className="right">
+        <Link
+          to='/register'>
+          Register
+            </Link>
+      </li>
+    )
+  }
+
+  render() {
+    return <>
+      <nav className='Header'>
+        <ul>
           <li className="right">
-            <Link
-            to='/register'>
-              Register
-            </Link>
-            </li>
-        )
-      }
-
-      render() {
-        return <>
-          <nav className='Header'>
-            <ul>
-              <li className="right">
 
             <h1>
               <Link to='/home'>
@@ -56,24 +60,25 @@ export default class Nav extends React.Component {
               </Link>
             </h1>
 
-              </li>
-              
-            <li>
-              {TokenService.hasAuthToken() ? <span className='Nav--wide'>Track your mental health!</span> : null}
-              </li>
-            {/* <li> */}
-            {TokenService.hasAuthToken()
-              ? this.renderLogoutLink()
-              : this.renderLoginLink()}
+          </li>
 
-            {/* </li> */}
-            {/* <li> */}
-            {!TokenService.hasAuthToken()
-              ? this.renderRegisterLink() : null}
-            {/* </li> */}
-              
-            </ul>
-          </nav>
-        </>
-      }
-    }
+          <li>
+            {TokenService.hasAuthToken() ? <span className='Nav--wide'>Track your mental health!</span> : null}
+          </li>
+          {/* <li> */}
+          {TokenService.hasAuthToken()
+            ? this.renderLogoutLink()
+            : this.renderLoginLink()}
+
+          {/* </li> */}
+          {/* <li> */}
+          {!TokenService.hasAuthToken()
+            ? this.renderRegisterLink() : null}
+          {/* </li> */}
+
+        </ul>
+        
+      </nav>
+    </>
+  }
+}
