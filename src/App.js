@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Nav from './components/nav'
 import Main from './routes/main'
+import BGAnimation from './components/bg-animation/bg-animation'
 
 class App extends React.Component {
   render() {
@@ -13,6 +14,10 @@ class App extends React.Component {
 
       <div className="page-content">
         <Main />
+      </div>
+
+      <div className="bg-animation">
+        <BGAnimation />
       </div>
     </div>
   );

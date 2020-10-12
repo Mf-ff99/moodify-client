@@ -1,32 +1,42 @@
+/* MOBILE VIEW */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
 @media only screen and (max-width: 900px) {
-  
+
 
 nav {
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 8em;
-  display: flex;
-  flex-direction: column;
-  margin-right: 1.5em;
-  margin-left: 1.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  background-color: cadetblue;
-  border-radius: 1em;
-  color: purple;
-  font-size: 1em;
-}
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
 
-ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    /*align-items: center;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em; */
+    /* background-color: cadetblue; */
+    color: purple;
+    font-size: 1.5em;
+  }
+  
+  .header ul {
+    list-style: none;
+  }
+    .past-moods ul {
   margin-top: 1em;
   max-height: 600px;
   overflow: scroll;
 }
 
-li {
+.past-moods li {
   list-style: none;
   border: .2em solid cadetblue;
   border-radius: 2em;
@@ -38,23 +48,30 @@ li {
 body {
   margin: 1.5em;
   font-size: .5em;
-  margin-top: 5em;
+  margin-top: 8em;
+  display: flex;
+  justify-content: center;
 }
 
 .home-page #mood-display {
-  
   min-width: 350px;
   max-width: 350px;
-
+  /* flex-grow: 1; */
+  margin-bottom: 3em;
+  margin-top: 1.5em;
 } 
 
 #chart-js {
-  height: 200px;
-  width: 300px;
+  height: 400px;
+  width: 350px;
 } 
 
 .page-content {
   
+}
+
+.splash-page {
+  margin-top: 3em;
 }
 
 button {
@@ -62,6 +79,7 @@ button {
   background-color: cornflowerblue;
   color: whitesmoke;
   font-size: 1.5em;
+  padding: 5px;
 }
 
 button:hover {
@@ -73,45 +91,84 @@ button:hover {
 
 }
 
+.add-mood button {
+  margin-bottom: 2px;
+  padding: 1px;
+  background-color: #5B4E77;
 }
 
+.expand-mood-btn {
+  background-color: #2E5EAA;
+}
+
+.add-mood-btn {
+  background-color: #5B4E77;
+}
+
+.add-mood {
+  margin-top: 2em;
+  border: 3px solid cadetblue;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* DESKTOP VIEW */
 @media only screen and (min-width: 900px) {
-  
 
   nav {
-    background-color: white;
+    background-color: #D1DEDE;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 70px;
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    /*align-items: center;
     margin-right: 1.5em;
     margin-left: 1.5em;
     padding-left: 1.5em;
-    padding-right: 1.5em;
-    background-color: cadetblue;
-    border-radius: 1em;
+    padding-right: 1.5em; */
     color: purple;
     font-size: 1em;
-    
+  }  
+
+  /* ul, li of Mood list */
+
+  .past-moods ul {
+    margin-top: 1em;
+    max-height: 600px;
+    overflow: hidden;
   }
   
-  li {
+  .past-moods li {
     list-style: none;
-    border: .2em solid cadetblue;
+    /* border: .2em solid cadetblue; */
     border-radius: 2em;
     padding: .5em;
+    margin-left: .7em;
     margin-bottom: .5em;
+    background-color: #D1DEDE;
+    box-shadow: 3px 2px 2px 1px #ccc;
   }
 
   body {
     display: flex;
     justify-content: center;
     margin-top: 5em;
+    background-color: #D1DEDE;
   }
 
   .page-content {
@@ -122,45 +179,82 @@ button:hover {
     align-items: center;
     justify-content: center;
   }
+
+  /* HOME PAGE */
   
   .home-page {
     width: 80%;
     min-height: 416px;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  /* MOOD CHART */
   
   
   .home-page #mood-display {
     padding: 10px;
     padding-bottom: 20px;
-    padding-right: 50px;
-    margin-right: 15px;
-    flex: 1;
-    border: 3px solid black;
-    min-width: 40vw;
+    /* padding-right: 10px; */
+    margin-right: 20px;
+    flex-grow: 1;
+    /* border: 3px solid black; */
+    min-width: 50vw;
     max-width: 500px;
     border-radius: 20px;
     box-shadow: 3px 3px 5px 6px #ccc;
+    background-color: white;
+    height: 490px;
+  }
+
+  .home-page #mood-display:hover {
+  
+
+  }
+
+.add-mood-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  #cancel-mood-btn {
+    margin-left: 43%;
   }
 
 
   #chart-js {
     height: 400px;
-    width: 40vw;
-  } 
+    width: 50vw;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: .5em;
+  }
   
+  #chart-js #chart-filter {
+      flex-grow: 0;
+  }
+  
+  /* MOOD LIST */
   .home-page #mood-list { 
     padding-right: 1.5em;
-    height: 550px;
-    overflow: scroll;
+    height: 520px;
+    overflow-x: hidden;
+    overflow-y: scroll;
     flex-direction: column;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     box-shadow: 3px 3px 5px 6px #ccc;
     font-size: 14px;
     width: 300px;
      border-radius: 20px;
+     background-color: whitesmoke;
     }
   
+    /* SPLASH PAGE */
   .splash-page {
     display: flex;
     justify-content: center;
@@ -168,6 +262,7 @@ button:hover {
     border: 3px solid black;
     width: 50vw;
     padding: 5px;
+    background-color: white;
   }
 
   .splash-page header {
@@ -181,25 +276,109 @@ button:hover {
   }
 
   .splash-page-btn{
-    margin-left: 25%;
+    /* margin-left: 25%; */
+    margin-top: 5px;
   }
 
   .home-page #mood-list .add-mood-btn {
     margin: .5em;
-    margin-left: 28%;
+    margin-left: 33%;
+    padding: 2px;
+  }
+
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+#login-btn {
+  margin-top: .5em;
+   margin-left: 36%;
+  }
+
+  .add-mood {
+    border: 3px solid cadetblue;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  .add-mood button {
+    margin-bottom: 2px;
+    padding: 1px;
+    background-color: #5B4E77;
+  }
+  
+  #cancel-mood-btn {
+    padding: 5px;
+  }
+
+  .expand-mood-btn {
+    background-color: #2E5EAA;
+  }
+
+  .add-mood-btn {
+    background-color: #5B4E77;
   }
 
   button {
     border-radius: .5em;
     background-color: cornflowerblue;
     color: whitesmoke;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    padding: 5px;
+  }
+
+  .btn {
+    padding: 5px;
   }
   
   button:hover {
     border-color: whitesmoke;
   }
+
+  /* nav bar animation */
+
+
+
+ header ul li {
+   float: left;
+   list-style: none;
+   margin-right: 1em;
+   font-family: 'KulminoituvaRegular', helvetica, sans-serif;
+   font-size: 25px;
+   padding: 12px; 
+  }
+   
+  header li {
+    color: #544738;
+ text-decoration: none;
+ float: left;
+ font-size: 25px;
+ padding: 12px;
+  }
+   
+.left:hover {
+   color: #7eb9be;
+ -webkit-transform: rotate(-10deg) scale(1.2);
+ -moz-transform: rotate(-10deg) scale(1.2);
+ -o-transform: rotate(-10deg) scale(1.2);
+}
+
+.right:hover {
+  -webkit-transform: rotate(10deg) scale(1.2);
+  -moz-transform: rotate(10deg) scale(1.2);
+  -o-transform: rotate(10deg) scale(1.2);
+}
   
   }
+
+  
 
 

@@ -8,4 +8,8 @@ describe(`LoginForm`, () => {
     it('Renders without crashing', () => {
         shallow(<LoginForm />)
     })
+    it('renders form approriately', () => {
+        const wrapper = shallow(<LoginForm />)
+        expect(toJson(wrapper)).toMatchSnapshot()
+      })
 })

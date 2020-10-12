@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component renders form approriately 1`] = `
+<Fragment>
+  <section
+    className="home-page"
+  >
+    <div
+      className="mood-display"
+      id="mood-display"
+    >
+      <h1>
+        How have you been feeling recently?
+      </h1>
+      <div
+        className="add-mood-filter-btn-container"
+      />
+      <br />
+      <Chart
+        props={Array []}
+      />
+    </div>
+    <div
+      className="past-moods"
+    >
+      <ul
+        className="past-moods-list"
+        id="mood-list"
+      >
+        <hr />
+        <Link
+          to="/add-mood"
+        >
+          <button
+            className="add-mood-btn"
+            type="click"
+          >
+            Add a mood
+          </button>
+        </Link>
+      </ul>
+    </div>
+  </section>
+</Fragment>
+`;

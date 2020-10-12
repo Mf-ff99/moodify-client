@@ -43,6 +43,7 @@ export default class LoginForm extends React.Component {
     return (
       <section className="login-form">
         <h1>Log in</h1>
+        <br />
 
         <form className="LoginForm"
          onSubmit={this.handleSubmitJwtAuth}
@@ -51,13 +52,14 @@ export default class LoginForm extends React.Component {
           {error && <p className='red'>{error}</p>}
         </div>
           <div className="container">
-            <label htmlFor="username"><b>Username</b></label>
+            <label htmlFor="username"><b>Username </b></label>
             <input type="text" placeholder="Enter Username" name="username" defaultValue="dunder" required />
             <br />
-            <label htmlFor="password"><b>Password</b></label>
+            <br />
+            <label htmlFor="password"><b>Password </b></label>
             <input type="password" placeholder="Enter Password" name="password" defaultValue="password" required />
-
-            <button type="submit">Login</button>
+            <br />
+            <button type="submit" id="login-btn">Login</button>
             {/* <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me</input>
       </label> */}

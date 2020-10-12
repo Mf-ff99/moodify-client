@@ -51,6 +51,7 @@ export default class RegistrationForm extends Component {
                         id='RegistrationForm__user_name'>
                     </Input>
                 </div>
+                <br />
                 <div className='password'>
                     <label htmlFor='RegistrationForm__password'>
                         Password <Required />
@@ -62,6 +63,7 @@ export default class RegistrationForm extends Component {
                         id='RegistrationForm__password'>
                     </Input>
                 </div>
+                <br />
                 
                 <Button type='submit'>
                     Register

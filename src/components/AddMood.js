@@ -32,7 +32,7 @@ export default class AddMood extends React.Component {
         return (
             <section className="add-mood">
                 <h1>Add a mood!</h1>
-                <form onSubmit={this.handleSubmitMood}>
+                <form className="add-mood-form" onSubmit={this.handleSubmitMood}>
                     <label htmlFor="mood">What's your mood, one being the worst you could possibly feel, 10 being the best?</label>
                     <select name="mood" required onChange={this.handleDisplaySubmitBtn}>
                         <option>1</option>

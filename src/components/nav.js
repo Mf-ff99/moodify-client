@@ -11,45 +11,68 @@ export default class Nav extends React.Component {
 
       renderLogoutLink() {
         return (
-          <div className='Header__logged-in'>
+          <li className="left">
             <Link
               onClick={this.handleLogoutClick}
               to='/'>
               Logout
             </Link>
-          </div>
+          </li>
         )
       }
 
       renderLoginLink() {
         return (
-          <div className='Header__not-logged-in'>
+          <li className="left">
             <Link
               to='/login'>
               Log in
             </Link>
-            <br />
+         </li>        
+        )
+      }
+
+      renderRegisterLink() {
+        return (
+          <li className="right">
             <Link
-              to='/register'>
+            to='/register'>
               Register
             </Link>
-          </div>
+            </li>
         )
       }
 
       render() {
         return <>
           <nav className='Header'>
+            <ul>
+              <li className="right">
+
             <h1>
               <Link to='/home'>
                 {/* insert fontawesome icon of some kind here */}
                 Moodify
               </Link>
             </h1>
-            <span className='Nav--wide'>Track your mental health!</span>
+
+              </li>
+              
+            <li>
+              {TokenService.hasAuthToken() ? <span className='Nav--wide'>Track your mental health!</span> : null}
+              </li>
+            {/* <li> */}
             {TokenService.hasAuthToken()
               ? this.renderLogoutLink()
               : this.renderLoginLink()}
+
+            {/* </li> */}
+            {/* <li> */}
+            {!TokenService.hasAuthToken()
+              ? this.renderRegisterLink() : null}
+            {/* </li> */}
+              
+            </ul>
           </nav>
         </>
       }

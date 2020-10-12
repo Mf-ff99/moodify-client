@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chart component renders form approriately 1`] = `
+<div
+  id="chart-js"
+>
+  <select
+    name="filter"
+    onChange={[Function]}
+  >
+    <option
+      value="pastWeek"
+    >
+      Past week
+    </option>
+    <option
+      value="pastMonth"
+    >
+      Past month
+    </option>
+    <option
+      value="allTime"
+    >
+      All time
+    </option>
+  </select>
+  <br />
+  <Line
+    data={
+      Object {
+        "datasets": Array [
+          Object {
+            "backgroundColor": "rgba(75,192,192,1)",
+            "borderColor": "rgba(0,0,0,1)",
+            "borderWidth": 2,
+            "data": Array [
+              0,
+            ],
+            "fill": true,
+            "label": "your mood",
+            "lineTension": 0.7,
+          },
+        ],
+        "labels": Array [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        "moods": Array [],
+      }
+    }
+    options={
+      Object {
+        "legend": Object {
+          "display": true,
+          "fontSize": 20,
+          "position": "top",
+        },
+        "maintainAspectRatio": false,
+        "responsive": true,
+        "title": Object {
+          "display": true,
+          "fontSize": 20,
+          "text": "Your mood history",
+        },
+      }
+    }
+  />
+</div>
+`;

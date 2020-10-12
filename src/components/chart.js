@@ -16,6 +16,8 @@ export default class Chart extends React.Component {
                 backgroundColor: 'rgba(75,192,192,1)',
                 borderColor: 'rgba(0,0,0,1)',
                 borderWidth: 2,
+                pointBorderWidth: 2,
+                pointRadius: 6,
                 data: [0]
             },
         ],
@@ -34,8 +36,6 @@ export default class Chart extends React.Component {
                 this.setState({ moods: res, labels: newDateAxis, datasets: [{ label: 'your mood', data: newData }] })
             }
             )
-            .then(res => {
-            })
             .catch(err => {
                 console.log(err.message)
             })
@@ -113,13 +113,14 @@ export default class Chart extends React.Component {
 
         return (
             <div id="chart-js">
-                <select name="filter" onChange={this.handleFiltering}>
+                <select name="filter" id="chart-filter" onChange={this.handleFiltering}>
                     <option value="pastWeek">Past week</option>
                     <option value="pastMonth">Past month</option>
                     <option value="allTime">All time</option>
                 </select>
                 <br />
                 <Line
+                className="chart-js-true"
                     data={this.state}
                     options={{
                         responsive: true,

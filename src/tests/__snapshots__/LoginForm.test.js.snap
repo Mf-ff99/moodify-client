@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm renders form approriately 1`] = `
+<section
+  className="login-form"
+>
+  <h1>
+    Log in
+  </h1>
+  <form
+    className="LoginForm"
+    onSubmit={[Function]}
+  >
+    <div
+      role="alert"
+    />
+    <div
+      className="container"
+    >
+      <label
+        htmlFor="username"
+      >
+        <b>
+          Username
+        </b>
+      </label>
+      <input
+        defaultValue="dunder"
+        name="username"
+        placeholder="Enter Username"
+        required={true}
+        type="text"
+      />
+      <br />
+      <label
+        htmlFor="password"
+      >
+        <b>
+          Password
+        </b>
+      </label>
+      <input
+        defaultValue="password"
+        name="password"
+        placeholder="Enter Password"
+        required={true}
+        type="password"
+      />
+      <button
+        type="submit"
+      >
+        Login
+      </button>
+    </div>
+  </form>
+</section>
+`;

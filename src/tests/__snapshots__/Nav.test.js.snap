@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component  renders form approriately 1`] = `
+<Fragment>
+  <nav
+    className="Header"
+  >
+    <h1>
+      <Link
+        to="/home"
+      >
+        Moodify
+      </Link>
+    </h1>
+    <span
+      className="Nav--wide"
+    >
+      Track your mental health!
+    </span>
+    <div
+      className="Header__not-logged-in"
+    >
+      <Link
+        to="/login"
+      >
+        Log in
+      </Link>
+      <br />
+      <Link
+        to="/register"
+      >
+        Register
+      </Link>
+    </div>
+  </nav>
+</Fragment>
+`;

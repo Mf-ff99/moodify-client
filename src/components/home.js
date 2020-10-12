@@ -85,7 +85,10 @@ export default class Home extends React.Component {
               </select> */}
             </div>
             <br />
+            <div className="chart-js">
             <Chart props={this.state.moods} />
+            </div>
+              
           </div>
           <div className="past-moods">
             <ul id="mood-list" className="past-moods-list">
