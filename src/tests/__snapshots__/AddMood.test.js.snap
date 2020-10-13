@@ -8,6 +8,7 @@ exports[`AddMood component renders form approriately 1`] = `
     Add a mood!
   </h1>
   <form
+    className="add-mood-form"
     onSubmit={[Function]}
   >
     <label

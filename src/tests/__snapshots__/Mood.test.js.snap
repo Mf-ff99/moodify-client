@@ -12,6 +12,13 @@ exports[`Mood Component renders props approriately 1`] = `
     <h3>
       Invalid Date
     </h3>
+    <button
+      className="expand-mood-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Expand
+    </button>
   </li>
 </Fragment>
 `;

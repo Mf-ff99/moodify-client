@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home component renders form approriately 1`] = `
-<Fragment>
+<div
+  className="home-view"
+>
+  <div
+    className="quote-generator-container"
+  >
+    <QuoteGenerator />
+  </div>
   <section
     className="home-page"
   >
@@ -16,30 +23,34 @@ exports[`Home component renders form approriately 1`] = `
         className="add-mood-filter-btn-container"
       />
       <br />
-      <Chart
-        props={Array []}
-      />
+      <div
+        className="chart-container"
+      >
+        <Chart
+          props={Array []}
+        />
+      </div>
     </div>
     <div
       className="past-moods"
     >
+      <Link
+        to="/add-mood"
+      >
+        <button
+          className="add-mood-btn"
+          type="click"
+        >
+          Add a mood
+        </button>
+      </Link>
       <ul
         className="past-moods-list"
         id="mood-list"
       >
-        <hr />
-        <Link
-          to="/add-mood"
-        >
-          <button
-            className="add-mood-btn"
-            type="click"
-          >
-            Add a mood
-          </button>
-        </Link>
+        <br />
       </ul>
     </div>
   </section>
-</Fragment>
+</div>
 `;

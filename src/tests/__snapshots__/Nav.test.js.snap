@@ -5,33 +5,38 @@ exports[`Nav component  renders form approriately 1`] = `
   <nav
     className="Header"
   >
-    <h1>
-      <Link
-        to="/home"
+    <ul>
+      <li
+        className="right"
       >
-        Moodify
-      </Link>
-    </h1>
-    <span
-      className="Nav--wide"
-    >
-      Track your mental health!
-    </span>
-    <div
-      className="Header__not-logged-in"
-    >
-      <Link
-        to="/login"
+        <h1>
+          <Link
+            to="/home"
+          >
+            Moodify
+          </Link>
+        </h1>
+      </li>
+      <li />
+      <li
+        className="left"
       >
-        Log in
-      </Link>
-      <br />
-      <Link
-        to="/register"
+        <Link
+          to="/login"
+        >
+          Log in
+        </Link>
+      </li>
+      <li
+        className="right"
       >
-        Register
-      </Link>
-    </div>
+        <Link
+          to="/register"
+        >
+          Register
+        </Link>
+      </li>
+    </ul>
   </nav>
 </Fragment>
 `;

@@ -2,6 +2,7 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
+
 @media only screen and (max-width: 900px) {
 
 
@@ -17,12 +18,7 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-    /*align-items: center;
-    margin-right: 1.5em;
-    margin-left: 1.5em;
-    padding-left: 1.5em;
-    padding-right: 1.5em; */
-    /* background-color: cadetblue; */
+    list-style: none;
     color: purple;
     font-size: 1.5em;
   }
@@ -30,12 +26,15 @@ nav {
 .header ul {
     list-style: none;
   }
+
+.header h1 {
+  margin-bottom: 20px;
+}
 .past-moods ul {
   margin-top: 1em;
   max-height: 600px;
   overflow: scroll;
 }
-
 
 .past-moods li {
   list-style: none;
@@ -49,7 +48,7 @@ nav {
 body {
   margin: 1.5em;
   font-size: .5em;
-  margin-top: 10em;
+  margin-top: 14em;
   display: flex;
   justify-content: center;
 }
@@ -68,11 +67,21 @@ body {
 } 
 
 .page-content {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .splash-page {
-  margin-top: 3em;
+  margin: 3em;
+  margin-right: 20em;
+  border: 4px inset cyan;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 button {
@@ -126,10 +135,10 @@ button:hover {
 
 }
 
-* {
+/* * {
   padding: 0;
   margin: 0;
-}
+} */
 
 /* DESKTOP VIEW */
 @media only screen and (min-width: 900px) {
@@ -140,15 +149,11 @@ button:hover {
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
-
+    height: 50px;
+    padding-top: 2em;
     display: flex;
     justify-content: center;
-    /*align-items: center;
-    margin-right: 1.5em;
-    margin-left: 1.5em;
-    padding-left: 1.5em;
-    padding-right: 1.5em; */
+    align-items: center; 
     color: purple;
     font-size: 1em;
   }  
@@ -157,44 +162,49 @@ button:hover {
 
 .past-moods ul {
     margin-top: 1em;
+    padding-left: 8px;
     max-height: 460px;
     overflow: hidden;
+    margin-bottom: 0;
   }
   
 .past-moods li {
     list-style: none;
     /* border: .2em solid cadetblue; */
-    border-radius: 2em;
-    padding: .5em;
-    margin-left: .7em;
+    border-radius: 1.5em;
+    padding: 8px;
+    padding-top: 0;
     margin-bottom: .5em;
     background-color: #D1DEDE;
   }
 
 .past-moods {
-  margin-top: 5px;
+  margin-top: 10px;
   background-color: white;
   padding-top: 5px;
   border-radius: 20px;
+  padding-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 body {
     display: flex;
     justify-content: center;
-    margin-top: 5em;
+    margin-top: 6em;
     margin-left: 9.5em;
     background-color: #D1DEDE;
+    /* z-index: 1000; */
   }
 
 .page-content {
     margin-top: .5em;
     padding-top: .5em;
     display: flex;
-    width: 1400px;
+    width: 1500px;
     align-items: center;
     justify-content: center;
   }
@@ -207,6 +217,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 1.2em;
+    margin-right: 2em;
   }
 
   /* MOOD CHART */
@@ -227,6 +239,9 @@ body {
     height: 490px;
   }
 
+.add-mood {
+  margin-right: 11.5em;
+}
 
 .add-mood-form{
     display: flex;
@@ -275,11 +290,13 @@ body {
 .splash-page {
     display: flex;
     justify-content: center;
+    align-items: center;
     box-shadow: 3px 3px 5px 6px #ccc;
     border: 3px solid black;
     width: 50vw;
     padding: 5px;
     background-color: white;
+    margin-right: 10em;
   }
 
 .splash-page header {
@@ -366,13 +383,13 @@ button:hover {
 
 
 
-header ul li {
+header ul {
    float: left;
    list-style: none;
    margin-right: 1em;
    font-family: 'KulminoituvaRegular', helvetica, sans-serif;
    font-size: 25px;
-   padding: 12px; 
+   /* padding: 12px;  */
   }
    
 header li {
@@ -381,7 +398,7 @@ header li {
  float: left;
  font-size: 25px;
  padding: 12px;
-  }
+}
    
 .left:hover {
    color: #7eb9be;

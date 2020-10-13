@@ -5,6 +5,7 @@ exports[`Chart component renders form approriately 1`] = `
   id="chart-js"
 >
   <select
+    id="chart-filter"
     name="filter"
     onChange={[Function]}
   >
@@ -26,6 +27,7 @@ exports[`Chart component renders form approriately 1`] = `
   </select>
   <br />
   <Line
+    className="chart-js-true"
     data={
       Object {
         "datasets": Array [
@@ -39,6 +41,8 @@ exports[`Chart component renders form approriately 1`] = `
             "fill": true,
             "label": "your mood",
             "lineTension": 0.7,
+            "pointBorderWidth": 2,
+            "pointRadius": 6,
           },
         ],
         "labels": Array [

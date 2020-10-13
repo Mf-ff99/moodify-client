@@ -6,9 +6,6 @@ import TokenService from '../services/TokenService'
 export default class Nav extends React.Component {
 
 
-
-
-
   handleLogoutClick = () => {
     TokenService.clearAuthToken();
   }
@@ -53,12 +50,12 @@ export default class Nav extends React.Component {
         <ul>
           <li className="right">
 
-            <h1>
-              <Link to='/home'>
+            
+              {TokenService.hasAuthToken() ? <Link to='/home'>
                 {/* insert fontawesome icon of some kind here */}
                 Moodify
-              </Link>
-            </h1>
+              </Link> : <Link to='/'>Moodify</Link>}
+          
 
           </li>
 

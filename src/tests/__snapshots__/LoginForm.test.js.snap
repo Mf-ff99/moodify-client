@@ -7,6 +7,7 @@ exports[`LoginForm renders form approriately 1`] = `
   <h1>
     Log in
   </h1>
+  <br />
   <form
     className="LoginForm"
     onSubmit={[Function]}
@@ -21,7 +22,7 @@ exports[`LoginForm renders form approriately 1`] = `
         htmlFor="username"
       >
         <b>
-          Username
+          Username 
         </b>
       </label>
       <input
@@ -32,11 +33,12 @@ exports[`LoginForm renders form approriately 1`] = `
         type="text"
       />
       <br />
+      <br />
       <label
         htmlFor="password"
       >
         <b>
-          Password
+          Password 
         </b>
       </label>
       <input
@@ -46,7 +48,9 @@ exports[`LoginForm renders form approriately 1`] = `
         required={true}
         type="password"
       />
+      <br />
       <button
+        id="login-btn"
         type="submit"
       >
         Login

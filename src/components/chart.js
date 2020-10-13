@@ -24,14 +24,22 @@ export default class Chart extends React.Component {
         moods: []
     }
 
+
     componentDidMount() {
+        const options = {
+            month: 'numeric',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+           
+        }
         MoodApiService.getMoods()
             .then(res => {
                 const newData = res.map(mood =>
                     mood.current_mood
                 )
                 const newDateAxis = res.map(mood =>
-                    new Date(mood.date_added).toString().split(" ").slice(0, 4).join(" ")
+                    new Intl.DateTimeFormat('en-US', options).format(new Date(mood.date_added))
                 )
                 this.setState({ moods: res, labels: newDateAxis, datasets: [{ label: 'your mood', data: newData }] })
             }
@@ -55,6 +63,14 @@ export default class Chart extends React.Component {
         seventhDay.setDate(seventhDay.getDate() - 6)
         thirtyDay.setDate(thirtyDay.getDate() - 29)
 
+        const options = {
+            month: 'numeric',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+           
+        }
+
         switch (filterVar) {
             case 'pastWeek':
                 //call function to query the DB and set
@@ -69,7 +85,7 @@ export default class Chart extends React.Component {
                 )
                 const datesForMoods = filteredMoods
                 const newDateAxis = datesForMoods.map(mood =>
-                    new Date(mood.date_added).toString().split(" ").slice(0, 4).join(" ")
+                    new Intl.DateTimeFormat('en-US', options).format((new Date(mood.date_added)))
                 )
                 this.setState({ labels: newDateAxis, datasets: [{ label: 'your mood', data: filtered }] })
                 break;
@@ -86,7 +102,7 @@ export default class Chart extends React.Component {
                 )
 
                 const newFilteredDateAxis = monthFilteredMoods.map(mood =>
-                    new Date(mood.date_added).toString().split(" ").slice(0, 4).join(" ")
+                    new Intl.DateTimeFormat('en-US', options).format((new Date(mood.date_added)))
                 )
                 this.setState({ labels: newFilteredDateAxis, datasets: [{ label: 'your mood', data: monthFiltered }] })
 
@@ -99,7 +115,7 @@ export default class Chart extends React.Component {
                     mood.current_mood
                 )
                 const allTimeDateAxis = allTimeMoodsSorted.map(mood =>
-                    new Date(mood.date_added).toString().split(" ").slice(0, 4).join(" ")
+                    new Intl.DateTimeFormat('en-US', options).format((new Date(mood.date_added)))
                 )
                 this.setState({ labels: allTimeDateAxis, datasets: [{ label: 'your mood', data: allTimeMoods }] })
                 break;
