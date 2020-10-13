@@ -199,7 +199,7 @@ body {
     justify-content: center;
   }
 
-  /* HOME PAGE */
+/* HOME PAGE */
   
 .home-page {
     width: 80%;
@@ -290,32 +290,32 @@ body {
 
 .splash-page-to {
     margin-left: 35%;
-  }
+}
 
-.splash-page-btn{
-    /* margin-left: 25%; */
+.splash-page-btn {
     margin-top: 5px;
-  }
+}
 
 .home-page #mood-list .add-mood-btn {
     margin: .5em;
     margin-left: 33%;
     padding: 2px;
-  }
+}
 
 .login-form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+    margin-right: 8em;
+}
 
 
 
 #login-btn {
   margin-top: .5em;
    margin-left: 36%;
-  }
+}
 
 .add-mood {
     border: 3px solid cadetblue;
@@ -394,6 +394,10 @@ header li {
   -webkit-transform: rotate(10deg) scale(1.2);
   -moz-transform: rotate(10deg) scale(1.2);
   -o-transform: rotate(10deg) scale(1.2);
+}
+
+.quote-container {
+  margin-bottom: 5px;
 }
   
   }
