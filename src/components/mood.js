@@ -52,10 +52,8 @@ export default class Mood extends React.Component {
                <li className="mood-item" onClick={this.handleExpand}>
                 <h2>{this.props.props.current_mood}/10</h2>
                 <h3>{ new Date(this.props.props.date_added).toString().split(" ").slice(0, 4).join(" ")}</h3>
-            <button type="button" className="expand-mood-btn" onClick={this.handleExpand}>Expand</button></li> : <li className="mood" onClick={this.handleExpand}>
+            <button type="button" className="expand-mood-btn" onClick={this.handleExpand}>Expand</button></li> : <li className="mood-expanded" onClick={this.handleExpand}>
             <h2>{this.props.props.current_mood}/10</h2>
-            <h3>{}</h3>
-            <br />
             <h3>{new Intl.DateTimeFormat('en-US', options).format(date) }</h3>
             <h3>Notes:</h3>
             <p>{this.props.props.note}</p>

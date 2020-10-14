@@ -129,7 +129,7 @@ export default class Chart extends React.Component {
 
         return (
             <div id="chart-js">
-                <select name="filter" id="chart-filter" onChange={this.handleFiltering}>
+                <select name="filter" id="chart-filter" onChange={this.handleFiltering} defaultValue="allTime">
                     <option value="pastWeek">Past week</option>
                     <option value="pastMonth">Past month</option>
                     <option value="allTime">All time</option>

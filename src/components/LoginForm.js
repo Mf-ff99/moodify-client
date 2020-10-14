@@ -52,12 +52,17 @@ export default class LoginForm extends React.Component {
           {error && <p className='red'>{error}</p>}
         </div>
           <div className="container">
+            <p>Use demo account to login:</p>
+         
+            <p>default username: dunder</p>
+            <p>default password: password</p>
             <label htmlFor="username"><b>Username </b></label>
-            <input type="text" placeholder="Enter Username" name="username" defaultValue="dunder" required />
+            <input type="text" placeholder="Enter Username" name="username" required />
             <br />
             <br />
             <label htmlFor="password"><b>Password </b></label>
-            <input type="password" placeholder="Enter Password" name="password" defaultValue="password" required />
+            <input type="password" placeholder="Enter Password" name="password" required />
+            <br />
             <br />
             <button type="submit" id="login-btn">Login</button>
             {/* <label>
