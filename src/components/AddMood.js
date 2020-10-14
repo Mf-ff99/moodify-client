@@ -35,16 +35,16 @@ export default class AddMood extends React.Component {
                 <form className="add-mood-form" onSubmit={this.handleSubmitMood}>
                     <label htmlFor="mood">What's your mood, one being the worst you could possibly feel, 10 being the best?</label>
                     <select name="mood" required onChange={this.handleDisplaySubmitBtn}>
-                        <option>1 - horrible :(</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 - could be better, could be worse</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10 - it doesn't get better than this!</option>
+                        <option value={1}>1 - horrible :(</option>
+                        <option value={2}>2</option>
+                        <option value={3}>3</option>
+                        <option value={4}>4</option>
+                        <option value={5}>5 - could be better, could be worse</option>
+                        <option value={6}>6</option>
+                        <option value={7}>7</option>
+                        <option value={8}>8</option>
+                        <option value={9}>9</option>
+                        <option value={10}>10 - it doesn't get better than this!</option>
                     </select>
                     <br />
                     <label htmlFor="category">What category would you like to put your mood in?</label>
