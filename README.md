@@ -1,4 +1,4 @@
-### MOODIFY
+## MOODIFY
 Created with create-react-app and completed using JavaScript, CSS, and React. 
 
 Client Live Deployment: https://vercel.com/mf-ff99/moodify
@@ -16,8 +16,8 @@ The API is deployed on Heroku here: https://moodify-server-api.herokuapp.com/
 
 
 
-### Other Tidbits
-## Inspirational Quotes API
+## Other Tidbits
+### Inspirational Quotes API
   github repo: https://github.com/ssokurenko/quotes-react-app
   creator github: ssokurenko
   uploaded by creator for use at: https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373
