@@ -25,7 +25,7 @@ nav {
   
 .header ul {
     list-style: none;
-  }
+}
 
 .header h1 {
   margin-bottom: 20px;
@@ -45,6 +45,8 @@ nav {
   max-width: 250px;
 }
 
+
+
 body {
   margin: 1.5em;
   font-size: .5em;
@@ -52,6 +54,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 
 .home-page #mood-display {
   min-width: 350px;
@@ -151,14 +154,59 @@ nav {
     height: 30px;
     padding-top: 2em;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; 
     color: purple;
     font-size: 1em;
-    margin-right: 4em;
-  }  
+    font-family: 'News Cycle', sans-serif;
+}
+ 
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  min-width: 600px; 
+}
+/* nav bar animation */
 
-  /* ul, li of Mood list */
+li.right {
+  position: relative;
+  margin-top: 10px;
+  padding: 0;
+}
+
+li.left{
+  margin-top: 10px;
+  padding: 0;
+}
+
+header li.left  {
+  transition: all 0.5s ease;
+  transform: none;
+  position: relative;
+}
+
+header li.right {
+  transition: all 0.5s ease;
+  transform: none;
+  position: relative;
+}
+
+header li.left:hover  {
+  /* left: 100px; */
+  -webkit-transform: rotate(-10deg) scale(1.2);
+  -moz-transform: rotate(-10deg) scale(1.2);
+  -o-transform: rotate(-10deg) scale(1.2);
+  transform: rotate(-10deg) scale(1.2);
+}
+
+header li.right:hover {
+  transform: rotate(10deg) scale(1.2);
+  -webkit-transform: rotate(10deg) scale(1.2);
+  -moz-transform: rotate(10deg) scale(1.2);
+  -o-transform: rotate(10deg) scale(1.2);}
+
+/* ul, li of Mood list */
 
 .past-moods ul {
     margin-top: 1em;
@@ -175,15 +223,25 @@ nav {
     padding-top: 0;
     margin-bottom: .5em;
     background-color: #D1DEDE;
+    border-right: inset 9px;;
+    border-bottom: outset;
+    border-top: inset;
+    border-left: inset 5px;
     display: flex;
     flex-direction: row;
     font-size: 12px;
     justify-content: space-between;
+    transition: .7s;
 }
 
 
 .mood-expanded {
+  transition: .8s;
   background-color: #d1dede; 
+  border-right: outset groove;
+    border-bottom: outset;
+    border-top: inset;
+    border-left: inset 9px;
   list-style: none;
   border-radius: 1.5em;
   padding: 8px;
@@ -205,7 +263,8 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  }
+  margin-right: 4em;
+}
 
 body {
     display: flex;
@@ -213,7 +272,7 @@ body {
     margin-top: 6em;
     margin-left: 9.5em;
     background-color: #D1DEDE;
-  }
+}
 
 .page-content {
     margin-top: .5em;
@@ -223,7 +282,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
-  }
+}
 
 /* HOME PAGE */
   
@@ -233,9 +292,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0;
+    margin-left: 3.5em;
     margin-right: 2em;
-  }
+}
 
   /* MOOD CHART */
   
@@ -251,7 +310,7 @@ body {
     box-shadow: 3px 3px 5px 6px #ccc;
     background-color: white;
     height: 490px;
-  }
+}
 
 .add-mood {
   margin-right: 11.5em;
@@ -261,7 +320,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 #cancel-mood-btn {
@@ -323,6 +381,7 @@ body {
 
 .splash-page-btn {
     margin-top: 5px;
+    margin-left: 3.3em;
 }
 
 .home-page #mood-list .add-mood-btn {
@@ -336,7 +395,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 16.3em;
+    margin-right: 9.5em;
 }
 
 #login-btn {
@@ -393,7 +452,9 @@ button:hover {
   }
 
   
-  
+.registration-form {
+  margin-right: 8em;
+}  
   
   header ul {
     float: left;
@@ -403,7 +464,7 @@ button:hover {
     font-size: 25px;
   }
   
-  header li {
+header li {
     color: #544738;
     text-decoration: none;
     float: left;
@@ -412,22 +473,9 @@ button:hover {
     width: auto;
     /* overflow-x: hidden; */
     height: 30px;
-    transition-duration: .5s;
-  }
-  
-/* nav bar animation */
-
-.left:hover {
-  -webkit-transform: rotate(-10deg) scale(1.3);
- -moz-transform: rotate(-10deg) scale(1.3);
- -o-transform: rotate(-10deg) scale(1.3);
+    /* transition-duration: .5s; */
 }
 
-.right:hover {
-  -webkit-transform: rotate(10deg) scale(1.3);
-  -moz-transform: rotate(10deg) scale(1.3);
-  -o-transform: rotate(10deg) scale(1.3);
-}
 
 .quote-container {
   margin-bottom: 5px;

@@ -11,6 +11,7 @@ const moodProps = [
         note: 'today sucked',
         category_id: 2,
         user_id: 1,
+        hours_slept: 4,
         date_added: '2020-09-04 11:37:30',
     }, {
         id: 2,
@@ -18,12 +19,14 @@ const moodProps = [
         note: 'today sucked',
         category_id: 2,
         user_id: 1,
+        hours_slept: 6,
         date_added: '2020-09-04 11:37:30',
     }, {
         id: 3,
         current_mood: 6,
         note: 'today sucked',
         category_id: 2,
+        hours_slept: 6,
         user_id: 1,
         date_added: '2020-09-04 11:37:30',
     }, {
@@ -31,6 +34,7 @@ const moodProps = [
         current_mood: 6,
         note: 'today sucked',
         category_id: 2,
+        hours_slept: 6,
         user_id: 1,
         date_added: '2020-09-04 11:37:30',
     },

@@ -59,9 +59,9 @@ export default class Nav extends React.Component {
 
           </li>
 
-          <li>
-            {TokenService.hasAuthToken() ? <span className='Nav--wide'>Track your mental health!</span> : null}
-          </li>
+          
+            {TokenService.hasAuthToken() ? <li><span className='Nav--wide'>Track your mental health!</span></li> : null}
+          
           {/* <li> */}
           {TokenService.hasAuthToken()
             ? this.renderLogoutLink()

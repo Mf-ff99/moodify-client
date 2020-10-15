@@ -10,10 +10,10 @@ export default class AddMood extends React.Component {
 
     handleSubmitMood = e => {
         e.preventDefault()
-        const { mood, moodNote, category } = e.target
+        const { mood, moodNote, category, hours_slept } = e.target
     
         
-        MoodApiService.postMood(moodNote.value, Number(mood.value), category.value)
+        MoodApiService.postMood(moodNote.value, Number(mood.value), category.value, hours_slept.value)
             .then(this.onLoginSuccess())
     }
 
@@ -57,7 +57,7 @@ export default class AddMood extends React.Component {
                     </select>
                     <br />
                     <label htmlFor="sleep-time">How many hours did you sleep last night?</label>
-                    <select required>
+                    <select name="hours_slept" required>
                         <option value={0}>0</option>
                         <option value={1}>1</option>
                         <option value={2}>2</option>

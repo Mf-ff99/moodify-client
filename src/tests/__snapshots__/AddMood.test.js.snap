@@ -21,35 +21,55 @@ exports[`AddMood component renders form approriately 1`] = `
       onChange={[Function]}
       required={true}
     >
-      <option>
-        1
+      <option
+        value={1}
+      >
+        1 - horrible :(
       </option>
-      <option>
+      <option
+        value={2}
+      >
         2
       </option>
-      <option>
+      <option
+        value={3}
+      >
         3
       </option>
-      <option>
+      <option
+        value={4}
+      >
         4
       </option>
-      <option>
-        5
+      <option
+        value={5}
+      >
+        5 - could be better, could be worse
       </option>
-      <option>
+      <option
+        value={6}
+      >
         6
       </option>
-      <option>
+      <option
+        value={7}
+      >
         7
       </option>
-      <option>
+      <option
+        value={8}
+      >
         8
       </option>
-      <option>
+      <option
+        value={9}
+      >
         9
       </option>
-      <option>
-        10
+      <option
+        value={10}
+      >
+        10 - it doesn't get better than this!
       </option>
     </select>
     <br />
@@ -97,43 +117,74 @@ exports[`AddMood component renders form approriately 1`] = `
     <select
       required={true}
     >
-      <option>
+      <option
+        value={0}
+      >
+        0
+      </option>
+      <option
+        value={1}
+      >
         1
       </option>
-      <option>
+      <option
+        value={2}
+      >
         2
       </option>
-      <option>
+      <option
+        value={3}
+      >
         3
       </option>
-      <option>
+      <option
+        value={4}
+      >
         4
       </option>
-      <option>
+      <option
+        value={5}
+      >
         5
       </option>
-      <option>
+      <option
+        value={6}
+      >
         6
       </option>
-      <option>
+      <option
+        value={7}
+      >
         7
       </option>
-      <option>
+      <option
+        value={8}
+      >
         8
       </option>
-      <option>
+      <option
+        value={9}
+      >
         9
       </option>
-      <option>
+      <option
+        value={10}
+      >
         10
       </option>
-      <option>
+      <option
+        value={11}
+      >
         11
       </option>
-      <option>
+      <option
+        value={12}
+      >
         12
       </option>
-      <option>
+      <option
+        value={13}
+      >
         13
       </option>
     </select>

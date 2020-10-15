@@ -33,7 +33,7 @@ export default class RegistrationForm extends Component {
         return (
             
             <form
-                className='RegistrationForm'
+                className='registration-form'
                 onSubmit={this.handleSubmit}
             >
                 <p>Register and log in to continue</p>

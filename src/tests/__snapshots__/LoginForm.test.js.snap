@@ -18,6 +18,15 @@ exports[`LoginForm renders form approriately 1`] = `
     <div
       className="container"
     >
+      <p>
+        Use demo account to login:
+      </p>
+      <p>
+        default username: dunder
+      </p>
+      <p>
+        default password: password
+      </p>
       <label
         htmlFor="username"
       >
@@ -26,7 +35,6 @@ exports[`LoginForm renders form approriately 1`] = `
         </b>
       </label>
       <input
-        defaultValue="dunder"
         name="username"
         placeholder="Enter Username"
         required={true}
@@ -42,12 +50,12 @@ exports[`LoginForm renders form approriately 1`] = `
         </b>
       </label>
       <input
-        defaultValue="password"
         name="password"
         placeholder="Enter Password"
         required={true}
         type="password"
       />
+      <br />
       <br />
       <button
         id="login-btn"

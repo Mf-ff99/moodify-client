@@ -9,13 +9,11 @@ exports[`Nav component  renders form approriately 1`] = `
       <li
         className="right"
       >
-        <h1>
-          <Link
-            to="/home"
-          >
-            Moodify
-          </Link>
-        </h1>
+        <Link
+          to="/"
+        >
+          Moodify
+        </Link>
       </li>
       <li />
       <li

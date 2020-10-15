@@ -46,6 +46,7 @@ export default class Mood extends React.Component {
            
         }
         const date = new Date(this.props.props.date_added)
+        console.log(this.props.hours_slept)
         return (
             <>
                 {!this.state.expanded ? 
@@ -57,7 +58,7 @@ export default class Mood extends React.Component {
             <h3>{new Intl.DateTimeFormat('en-US', options).format(date) }</h3>
             <h3>Notes:</h3>
             <p>{this.props.props.note}</p>
-            <p>Hours slept: 7</p>
+            <p>Hours slept: {this.props.props.hours_slept}</p>
             <p>Category: {this.handleCategory(this.props.props.category_id)}</p>
             <button type="button" className="expand-mood-btn" onClick={this.handleExpand}>Close</button>
           </li>}
