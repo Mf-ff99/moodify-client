@@ -13,7 +13,6 @@ nav {
     left: 0;
     right: 0;
     height: 70px;
-
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -359,30 +358,29 @@ body {
     /* SPLASH PAGE */
 .splash-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 3px 3px 5px 6px #ccc;
-    border: 3px solid black;
+    border: 4px inset;
     width: 50vw;
     padding: 5px;
     background-color: white;
     margin-right: 10em;
-  }
+}
+
+.splash-page .splash-page-tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .splash-page header {
     padding-right: 5px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
-
-.splash-page-to {
-    margin-left: 35%;
-}
-
-.splash-page-btn {
-    margin-top: 5px;
-    margin-left: 3.3em;
-}
 
 .home-page #mood-list .add-mood-btn {
     margin: .5em;
