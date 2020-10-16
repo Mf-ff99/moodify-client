@@ -8,7 +8,7 @@ moods over time.
 
 ## Screenshots
 
-A ladning page greets the user, as displayed below.
+A landing page greets the user, displayed below.
 
 ### splash page
 ![image](https://user-images.githubusercontent.com/66629254/96261642-b4525780-0f8e-11eb-9116-e560a31b4a0a.png)
@@ -19,11 +19,11 @@ The user can either register a new account, or log in with a demo account to vie
 ![image](https://user-images.githubusercontent.com/66629254/96261706-c7fdbe00-0f8e-11eb-967e-bb3e3239530a.png)
 
 On the home page, the chart is front and center with a history of your moods shown on the right-hand side.
-A comprehensive chart is provided to map out the user's mood over time. A recent addition
+A comprehensive chart is provided to map the user's mood over time. A recent addition
 to the application is the ability to log the user's hours slept and track their sleep in tandem with 
 their mood, represented by the purple line on the y-axis.
 
-A filter is available to filter your record by all time, past month, and past week.
+A filter is available to filter records by all time, past month, and past week.
 
 ### home page
 ![image](https://user-images.githubusercontent.com/66629254/96261739-d2b85300-0f8e-11eb-924b-550c951b4168.png)
