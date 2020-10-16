@@ -3,6 +3,23 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+@media only screen and (max-width: 320px) {
+  body {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-content {
+    margin-left: 10em;
+    overflow: wrap;
+  }
+
+  ul#mood-list {
+    /* margin-left: 0; */
+  }
+}
+
 @media only screen and (max-width: 900px) {
 
 
@@ -41,6 +58,7 @@ nav {
   border-radius: 2em;
   padding: .5em;
   margin-bottom: .5em;
+  min-width: 300px;
   max-width: 250px;
 }
 
@@ -52,6 +70,8 @@ body {
   margin-top: 14em;
   display: flex;
   justify-content: center;
+  margin-left: .5em;
+  margin-right: .5em;
 }
 
 
@@ -153,19 +173,31 @@ nav {
     height: 30px;
     padding-top: 2em;
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
+    justify-content: center; /*
+    align-items: center;  */
     color: purple;
     font-size: 1em;
     font-family: 'News Cycle', sans-serif;
 }
- 
-header ul {
+
+.App {
   display: flex;
+  justify-content: center;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul{
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 50%;
   min-width: 600px; 
 }
+
 /* nav bar animation */
 
 li.right {
@@ -268,6 +300,7 @@ header li.right:hover {
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 6em;
     margin-left: 9.5em;
     background-color: #D1DEDE;
@@ -277,7 +310,7 @@ body {
     margin-top: .5em;
     padding-top: .5em;
     display: flex;
-    width: 1500px;
+    /* width: 1500px; */
     align-items: center;
     justify-content: center;
     margin: auto;
