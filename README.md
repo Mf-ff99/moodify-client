@@ -38,11 +38,16 @@ When a logged in user chooses, they can click the 'add a mood' button to be take
 ## Tech stack and testing
 
 *React.js
-*JavaScript
-*vanilla css
- PostgreSQL
- SQL
- Node.js
+JavaScript
+vanilla css
+PostgreSQL
+SQL
+Node.js
+Enzyme
+Jest
+Mocha
+Chai
+*
 
 Front end testing:
  Jest and Enzyme, each React component has well-grained tests to determine that the app has not lost functionality
@@ -65,8 +70,10 @@ If you wish to see what the application can do on your own machine, follow the s
 
 *Clone Client repo to your local machine
 Run ``` 
-npm i
-npm start```
+npm i```
+```
+npm start
+```
 
 
 ## Other Tidbits
