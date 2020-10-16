@@ -3,6 +3,8 @@ Created with create-react-app and completed using JavaScript, CSS, and React.
 
 Client Live Deployment: https://vercel.com/mf-ff99/moodify
 
+Server Live Deployment: https://moodify-server-api.herokuapp.com/
+
 Moodify allows registered users to log in to their account and create an in-depth database of their 
 moods over time. 
 
