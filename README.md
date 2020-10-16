@@ -35,7 +35,7 @@ When a logged in user chooses, they can click the 'add a mood' button to be take
 ![image](https://user-images.githubusercontent.com/66629254/96261761-d9df6100-0f8e-11eb-8981-4b56349e093b.png)
 
 
-## Tech stack
+## Tech stack and testing
 
 *React.js
 *JavaScript
@@ -44,7 +44,12 @@ When a logged in user chooses, they can click the 'add a mood' button to be take
  SQL
  Node.js
 
+Front end testing:
+ Jest and Enzyme, each React component has well-grained tests to determine that the app has not lost functionality
 
+Back end testing:
+ Mocha and Chai were used to test each endpoint and knex-services, each endpoint has one test at a minimum.
+ 
 ## The Backend
 ### Moodify-API
 
