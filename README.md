@@ -14,15 +14,21 @@ In this project I wrote a server in Express connected to a PostgreSQL database. 
 
 ## Screenshots
 
-A landing page greets the user, displayed below.
 
 ### splash page
+
+A landing page greets the user, displayed below.
+
 ![image](https://user-images.githubusercontent.com/66629254/96261642-b4525780-0f8e-11eb-9116-e560a31b4a0a.png)
+
+
+### login form
 
 The user can either register a new account, or log in with a demo account to view the application's functionality.
 
-### login form
 ![image](https://user-images.githubusercontent.com/66629254/96261706-c7fdbe00-0f8e-11eb-967e-bb3e3239530a.png)
+
+### home page
 
 On the home page, the chart is front and center with a history of your moods shown on the right-hand side.
 A comprehensive chart is provided to map the user's mood over time. A recent addition
@@ -31,13 +37,14 @@ their mood, represented by the purple line on the y-axis.
 
 A filter is available to filter records by all time, past month, and past week.
 
-### home page
 ![image](https://user-images.githubusercontent.com/66629254/96261739-d2b85300-0f8e-11eb-924b-550c951b4168.png)
 
-When a logged in user chooses, they can click the 'add a mood' button to be taken to the add-mood form.
 
 
 ### add-mood page
+
+When a logged in user chooses, they can click the 'add a mood' button to be taken to the add-mood form.
+
 ![image](https://user-images.githubusercontent.com/66629254/96261761-d9df6100-0f8e-11eb-8981-4b56349e093b.png)
 
 
