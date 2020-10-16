@@ -50,10 +50,18 @@ When a logged in user chooses, they can click the 'add a mood' button to be take
 
 
 Front end testing:
- Jest and Enzyme, each React component has well-grained tests to determine that the app has not lost functionality
+ Jest and Enzyme, each React component has well-grained tests to determine that the app has not lost functionality.
 
 Back end testing:
  Mocha and Chai were used to test each endpoint and knex-services, each endpoint has one test at a minimum.
+ 
+## Code Organization
+### Components
+Each React component is placed within the /src/components folder. They are named semantically and logically. 
+### CSS
+CSS files are contained within the /src/css folder, excluding the background animation's .css file.
+### Tests
+All tests are held inside of the /src/tests folder along with a snapshot folder containing snapshot tests for each component.
  
 ## The Backend
 ### Moodify-API
