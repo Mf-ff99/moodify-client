@@ -6,6 +6,8 @@ Client Live Deployment: https://vercel.com/mf-ff99/moodify
 Moodify allows registered users to log in to their account and create an in-depth database of their 
 moods over time. 
 
+## Screenshots
+
 A ladning page greets the user, as displayed below.
 
 ### splash page
@@ -33,18 +35,37 @@ When a logged in user chooses, they can click the 'add a mood' button to be take
 ![image](https://user-images.githubusercontent.com/66629254/96261761-d9df6100-0f8e-11eb-8981-4b56349e093b.png)
 
 
+## Tech stack
+
+*React.js
+*JavaScript
+*vanilla css
+ PostgreSQL
+ SQL
+ Node.js
+
+
 ## The Backend
 ### Moodify-API
 
 I created both the fronted and backend on my own. The backend is running on Node.js and PostgreSQL.
 
+API documentation is available at the API Github.
 Moodify-API Github Repo: https://github.com/Mf-ff99/moodify-api
 The API is deployed on Heroku here: https://moodify-server-api.herokuapp.com/
 
 
+## Running the application 
+If you wish to see what the application can do on your own machine, follow the steps below:
+
+*Clone Client repo to your local machine
+Run ``` 
+npm i
+npm start```
+
 
 ## Other Tidbits
-### Inspirational Quotes API
+### Credit for Inspirational Quotes API
   github repo: https://github.com/ssokurenko/quotes-react-app
   creator github: ssokurenko
-  uploaded by creator for use at: https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373
+  uploaded by creator for use: https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373
