@@ -5,8 +5,12 @@ Client Live Deployment: https://vercel.com/mf-ff99/moodify
 
 Server Live Deployment: https://moodify-server-api.herokuapp.com/
 
-Moodify allows registered users to log in to their account and create an in-depth database of their 
-moods over time. 
+Moodify lets registered users log into their account and create an in-depth database of their moods over time, along with keeping track of hours slept and
+an extensive note-taking feature. Being a human is difficult, and tracking how you feel can help you develop a better sense of self as well as identify why you feel the way you do. Moodify aims to provide a tool-kit for those looking to better themselves, or simply record their feelings.
+
+In this project I wrote a server in Express connected to a PostgreSQL database. I used fetch calls in the componentDidMount React life-cycle method to populate the user-generated chart. React-router allowed for a fluid and dynamic UI as well as helped maintain organization as the application grew in size. 
+
+ 
 
 ## Screenshots
 
@@ -39,17 +43,7 @@ When a logged in user chooses, they can click the 'add a mood' button to be take
 
 ## Tech stack and testing 
 
-* React.js
-* JavaScript
-* vanilla css
-* PostgreSQL
-* SQL
-* Node.js
-* Enzyme
-* Jest
-* Mocha
-* Chai
-
+React.js, JavaScript, vanilla css, PostgreSQL, SQL, Node.js, Enzyme, Jest, Mocha, Chai
 
 Front end testing:
  Jest and Enzyme, each React component has well-grained tests to determine that the app has not lost functionality.
