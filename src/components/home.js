@@ -19,7 +19,13 @@ export default class Home extends React.Component {
       })
   }
 
+  handleGradientAnimation = (e) => {
+    //background gradient animation
+    // console.log(e.target, 'mousover event')
+  }
 
+//the first render pre-populates the user's moods in state and passes them to
+//chart where the filtering takes
   render() {
     let allMoods = this.state.moods
     let sortedMoods = allMoods.sort(function (x, y) {
@@ -27,7 +33,7 @@ export default class Home extends React.Component {
     })
 
     return (
-      <div className="home-view">
+      <div className="home-view" onMouseOver={this.handleGradientAnimation}>
         <div className="quote-generator-container">
           <QuoteGenerator />
         </div>

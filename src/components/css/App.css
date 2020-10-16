@@ -277,7 +277,7 @@ body {
     margin-top: .5em;
     padding-top: .5em;
     display: flex;
-    width: 1500px;
+    width: auto;
     align-items: center;
     justify-content: center;
     margin: auto;
