@@ -69,14 +69,14 @@ All tests are held inside of the /src/tests folder along with a snapshot folder 
 I created both the fronted and backend on my own. The backend is running on Node.js and PostgreSQL.
 
 API documentation is available at the API Github.
-Moodify-API Github Repo: https://github.com/Mf-ff99/moodify-api
-The API is deployed on Heroku here: https://moodify-server-api.herokuapp.com/
+- Moodify-API Github Repo: https://github.com/Mf-ff99/moodify-api
+- The API is deployed on Heroku here: https://moodify-server-api.herokuapp.com/
 
 
 ## Running the application 
-If you wish to see what the application can do on your own machine, follow the steps below:
+If you wish to see what the application can do on your own machine, or just to tinker around, follow the steps below:
 
-*Clone Client repo to your local machine
+* Clone Client repo to your local machine
 Run ``` 
 npm i```
 ```
