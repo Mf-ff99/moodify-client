@@ -35,19 +35,19 @@ When a logged in user chooses, they can click the 'add a mood' button to be take
 ![image](https://user-images.githubusercontent.com/66629254/96261761-d9df6100-0f8e-11eb-8981-4b56349e093b.png)
 
 
-## Tech stack and testing
+## Tech stack and testing 
 
-*React.js
-JavaScript
-vanilla css
-PostgreSQL
-SQL
-Node.js
-Enzyme
-Jest
-Mocha
-Chai
-*
+* React.js
+* JavaScript
+* vanilla css
+* PostgreSQL
+* SQL
+* Node.js
+* Enzyme
+* Jest
+* Mocha
+* Chai
+
 
 Front end testing:
  Jest and Enzyme, each React component has well-grained tests to determine that the app has not lost functionality
