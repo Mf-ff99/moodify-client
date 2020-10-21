@@ -1,15 +1,16 @@
-## MOODIFY
+# MOODIFY
+
+## Summary
+
 Created with create-react-app and completed using JavaScript, CSS, and React. 
 
 Client Live Deployment: https://vercel.com/mf-ff99/moodify
 
 Server Live Deployment: https://moodify-server-api.herokuapp.com/
 
-Moodify lets registered users log into their account and create an in-depth database of their moods over time, along with keeping track of hours slept and
-an extensive note-taking feature. Being a human is difficult, and tracking how you feel can help you develop a better sense of self as well as identify why you feel the way you do. Moodify aims to provide a tool-kit for those looking to better themselves, or simply record their feelings.
+Moodify lets registered users log into their account and create an in-depth database of their moods over time, along with keeping track of hours slept. Moodify also features extensive note-taking functionality to further understand yourself. Being a human is difficult, and tracking how you feel can help you develop a better sense of self as well as identify why you feel the way you do. Moodify aims to provide a tool-kit for those looking to better themselves, or simply record their feelings.
 
-In this project I wrote a server in Express connected to a PostgreSQL database. I used fetch calls in the componentDidMount React life-cycle method to populate the user-generated chart. React-router allowed for a fluid and dynamic UI as well as helped maintain organization as the application grew in size. 
-
+In this project I wrote a server in Express connected to a PostgreSQL database. I used fetch calls in the componentDidMount React life-cycle method to populate the user-generated chart. React-router allowed for a fluid and dynamic UI as well as helped maintain organization as the application grew in size.
  
 
 ## Screenshots
