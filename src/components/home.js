@@ -27,7 +27,7 @@ export default class Home extends React.Component {
     })
 
     return (
-      <div className="home-view" >
+      <section className="home-view" >
         <div className="quote-generator-container">
           <QuoteGenerator />
         </div>
@@ -55,7 +55,7 @@ export default class Home extends React.Component {
             </ul>
           </div>
         </section>
-      </div>
+      </section>
     )
   }
 }
