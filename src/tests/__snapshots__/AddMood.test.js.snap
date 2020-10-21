@@ -115,6 +115,7 @@ exports[`AddMood component renders form approriately 1`] = `
       How many hours did you sleep last night?
     </label>
     <select
+      name="hours_slept"
       required={true}
     >
       <option

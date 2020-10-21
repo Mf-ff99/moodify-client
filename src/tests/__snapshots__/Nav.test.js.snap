@@ -15,7 +15,6 @@ exports[`Nav component  renders form approriately 1`] = `
           Moodify
         </Link>
       </li>
-      <li />
       <li
         className="left"
       >

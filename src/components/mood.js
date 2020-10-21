@@ -1,5 +1,4 @@
 import React from 'react'
-//display the fetched mood with props, reusable function
 
 export default class Mood extends React.Component {
 
@@ -45,8 +44,9 @@ export default class Mood extends React.Component {
             minute: 'numeric',
            
         }
+
         const date = new Date(this.props.props.date_added)
-        console.log(this.props.hours_slept)
+        
         return (
             <>
                 {!this.state.expanded ? 

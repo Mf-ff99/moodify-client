@@ -4,7 +4,7 @@ import { Line } from 'react-chartjs-2';
 
 export default class Chart extends React.Component {
 
-//this state controls the chart's datasets
+//state controls the chart's datasets
 //yAxisID can be set to display two dynamic y-values for two different
 //datasets on the same chart
 
@@ -153,8 +153,6 @@ export default class Chart extends React.Component {
         }
     }
 
-// The chart needs to be passed the appropriate values 
-//on render, but it can be used elsewhere with some minor refactoring.
     render() {
 
         return (

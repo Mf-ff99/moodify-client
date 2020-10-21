@@ -12,13 +12,13 @@ class App extends React.Component {
         <Nav />
       </header>
 
-      <div className="page-content">
+      <main className="page-content">
         <Main />
-      </div>
+      </main>
 
-      <div className="bg-animation">
+      <footer className="bg-animation">
         <BGAnimation />
-      </div>
+      </footer>
     </div>
   );
   }

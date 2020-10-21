@@ -2,7 +2,7 @@
 
 exports[`Registration Form renders form approriately 1`] = `
 <form
-  className="RegistrationForm"
+  className="registration-form"
   onSubmit={[Function]}
 >
   <p>
