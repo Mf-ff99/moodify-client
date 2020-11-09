@@ -2,7 +2,7 @@
 
 ## Summary
 
-Created with create-react-app and completed using JavaScript, CSS, and React. 
+Bootstrapped with create-react-app and completed using JavaScript, vanilla CSS, react-chart-js, JSX and React. 
 
 Client Live Deployment: https://vercel.com/mf-ff99/moodify
 
