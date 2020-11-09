@@ -4,7 +4,7 @@
 
 Bootstrapped with create-react-app and completed using JavaScript, vanilla CSS, react-chart-js, JSX and React. 
 
-Client Live Deployment: https://vercel.com/mf-ff99/moodify
+Client Live Deployment: https://moodify.vercel.app/
 
 Server Live Deployment: https://moodify-server-api.herokuapp.com/
 
